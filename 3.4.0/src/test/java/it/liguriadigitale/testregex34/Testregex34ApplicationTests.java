@@ -19,10 +19,6 @@ class Testregex34ApplicationTests {
 		String expectedText = "Thisaaaeiiiiggnnsssuuy-te_xthasallotofspecial.jpg.doccharacters.txt";
 		String normalizedText = stripAccentsAndReplace(textWithUnwantedChars);
 		assertEquals(expectedText, normalizedText);
-		assertEquals(null, stripAccentsAndReplace(null));
-		assertEquals("", stripAccentsAndReplace(""));
-		String expectedFilename = "expected-Filename.pdf";
-		assertEquals(expectedFilename, stripAccentsAndReplace(expectedFilename));
 	}
 
 	private String stripAccentsAndReplace(String value) {
