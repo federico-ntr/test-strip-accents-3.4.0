@@ -26,6 +26,14 @@ class Testregex34ApplicationTests {
 			return null;
 		String REGEX_ACCEPTABLE_CHARS = "[^a-zA-Z0-9_.-]";
 		String textStrippedAccents = StringUtils.stripAccents(value);
+		System.out.println();
+		System.out.println();
+		System.out.println("*************");
+		System.out.println("stripAccents' result:");
+		System.out.println(textStrippedAccents);
+		System.out.println("*************");
+		System.out.println();
+		System.out.println();
 		String textReplaced = textStrippedAccents.replaceAll(REGEX_ACCEPTABLE_CHARS, "");
 		return textReplaced;
 	}
